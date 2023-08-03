@@ -9,6 +9,9 @@ html {
   font-size: 62.5%;
 }
 
+/* nav bar styles */
+
+
 html,
 body {
   overflow-x: hidden;
@@ -289,7 +292,7 @@ footer {
   right: 10px;
   transform: translateY(-50%);
   background-color: #ffd700;
-  color: #00000;
+  color: #000000;
   cursor:pointer;
   border:none;
   outline:none;
