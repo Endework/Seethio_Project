@@ -1,13 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./contactus.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Contact Us</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <section class="home">
+      <h3 class="home__text">
+        Seethio is your all-in-one website for your next adventure to Ethiopia
+      </h3>
+    </section>
+
+    <section class="contact-us-section">
+      <div class="contact-us-textbox">
+        <h3 class="title">contact us</h3>
+        <p class="contact__text">
+          Any question or remarks? Just write us a message!
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-contaner__details">
+          <h3 class="contact-contaner__details--title">Contact information</h3>
+          <p class="contact-contaner__details--text">
+            Say something to start a live chat
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <i class="icon fa-solid fa-phone-volume"></i>
+              <p class="contact__detail--text">+102 3456 789</p>
+            </div>
+
+            <div class="contact__detail">
+              <i class="icon fa-solid fa-envelope"></i>
+              <p class="contact__detail--text">demo@gmail.com</p>
+            </div>
+
+            <div class="contact__detail">
+              <i class="icon fa-solid fa-location-dot"></i>
+              <p class="contact__detail--text">
+                132 Dartmouth Street Boston Massachusetts 02156 United States
+              </p>
+            </div>
+          </div>
+
+          <div class="social-media-icons">
+            <div class="icon-box">
+              <i class="social-media-icon fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon-box">
+              <i class="social-media-icon fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon-box">
+              <i class="social-media-icon fa-brands fa-discord"></i>
+            </div>
+          </div>
+        </div>
+        <form action="" class="contact__form">
+          <div class="form-group-flex">
+            <div class="form-group u-marg-right">
+              <label for="firstName" class="form-label">first name</label>
+              <input type="text" name="" id="firstName" class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName" class="form-label">last name</label>
+              <input
+                type="text"
+                name=""
+                id="lastName"
+                class="form-input"
+                placeholder="doe"
+              />
+            </div>
+          </div>
+          <div class="form-group-flex">
+            <div class="form-group u-marg-right">
+              <label for="email" class="form-label">email address</label>
+              <input
+                type="email"
+                name=""
+                id="email"
+                class="form-input"
+                placeholder="your email address"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNumber" class="form-label">phone number</label>
+              <input
+                type="tel"
+                name=""
+                id="phoneNumber"
+                class="form-input"
+                placeholder="doe"
+              />
+            </div>
+          </div>
+
+          <div class="subject-select">
+            <p class="subject-select-title">select subject</p>
+            <div class="subject-options">
+              <div class="form-radio-groups">
+                <input
+                  type="radio"
+                  name="subject"
+                  id="general"
+                  value="general"
+                />
+                <label for="general">general inquiry</label>
+              </div>
+              <div class="form-radio-groups">
+                <input
+                  type="radio"
+                  name="subject"
+                  id="adventure"
+                  value="adventures"
+                />
+                <label for="adventure">adventures</label>
+              </div>
+              <div class="form-radio-groups">
+                <input
+                  type="radio"
+                  name="subject"
+                  id="pricing"
+                  value="pricing"
+                />
+                <label for="pricing">pricing</label>
+              </div>
+              <div class="form-radio-groups">
+                <input
+                  type="radio"
+                  name="subject"
+                  id="complementComplain"
+                  value="complement or complain"
+                />
+                <label for="complementComplain">complement/complain</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">message</label>
+            <textarea
+              class="message-box"
+              name=""
+              id="message"
+              placeholder="write your message"
+            ></textarea>
+          </div>
+          <div class="submit">
+            <button type="submit" class="submit-btn" id="submit-btn">
+              send message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
     <script src="./contactus.js"></script>
-</body>
+  </body>
 </html>
