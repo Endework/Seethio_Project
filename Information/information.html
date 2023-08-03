@@ -3,11 +3,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./information.css">
     <title>Information</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>seethio</p>
+                <div class="moon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="106" viewBox="0 0 139 106" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M138.375 103.023C73.9717 108.301 20.3198 91.4688 16.7943 64.1087C13.2687 36.7476 61.1551 8.80515 125.112 0.0396212C122.433 0.259167 119.736 0.516973 117.022 0.813873C49.0789 8.24792 -3.02312 37.3768 0.649039 65.8751C4.3212 94.3734 62.3769 111.449 130.32 104.015C133.031 103.719 135.717 103.387 138.375 103.023Z" fill="#EAC91A"/>
+                      </svg>
+                    <div class="green-star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="50" viewBox="0 0 61 50" fill="none">
+                            <path d="M30.6507 0L37.705 18.7863H60.5331L42.0647 30.3969L49.119 49.1832L30.6507 37.5726L12.1823 49.1832L19.2366 30.3969L0.768284 18.7863H23.5964L30.6507 0Z" fill="#408695"/>
+                          </svg>
+                    </div>
+                    <div class="yellow-star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28" fill="none">
+                            <path d="M16.1874 0.483398L19.8866 10.9745H31.8574L22.1728 17.4583L25.872 27.9493L16.1874 21.4655L6.50277 27.9493L10.202 17.4583L0.517352 10.9745H12.4882L16.1874 0.483398Z" fill="#EAC91A"/>
+                          </svg>
+                    </div>
+                    <div class="red-star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                            <path d="M7.7107 0.421875L9.51729 5.09989H15.3635L10.6338 7.99106L12.4404 12.6691L7.7107 9.7779L2.98101 12.6691L4.78759 7.99106L0.0578933 5.09989H5.90412L7.7107 0.421875Z" fill="#AC4307"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li>
+                    <span>
+                        <a href="">About Us</a>
+                        <hr>
+                    </span>
+                </li>
+                
+                <li><a href="">Acommodation</a></li>
+                <li><a href="">Booking</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="line">
+            <hr>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#69D6D6"/>
+              </svg>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid pt-3">
+            <div class="left-div">
+                <div class="wrapper">
+                    <img src="../Location/images/main_image.jpeg" alt="">
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="134" viewBox="0 0 62 134" fill="none">
+                            <path d="M0 10C0 4.47717 4.47715 0 10 0H51.0845C56.6073 0 61.0845 4.47715 61.0845 10V125.623C61.0845 128.387 57.6635 129.68 55.8348 127.607L33.1963 101.947C32.0133 100.606 29.9273 100.591 28.7254 101.915L5.22124 127.806C3.37745 129.837 0 128.533 0 125.79V10Z" fill="#EAC91A"/>
+                          </svg>
+                    </div>
+                    <div class="text">
+                        <p> <span >10</span> <br> Tickets</p>
+                    </div>
+                    <div class="menu">
+            
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.47667 2.64268C2.5 3.61852 2.5 5.19018 2.5 8.33268V11.666C2.5 14.8085 2.5 16.3802 3.47667 17.356C4.4525 18.3327 6.02417 18.3327 9.16667 18.3327H10.8333C13.9758 18.3327 15.5475 18.3327 16.5233 17.356C17.5 16.3802 17.5 14.8085 17.5 11.666V8.33268C17.5 5.19018 17.5 3.61852 16.5233 2.64268C15.5475 1.66602 13.9758 1.66602 10.8333 1.66602H9.16667C6.02417 1.66602 4.4525 1.66602 3.47667 2.64268ZM6.66667 7.70768C6.50091 7.70768 6.34193 7.77353 6.22472 7.89074C6.10751 8.00795 6.04167 8.16692 6.04167 8.33268C6.04167 8.49844 6.10751 8.65741 6.22472 8.77462C6.34193 8.89183 6.50091 8.95768 6.66667 8.95768H13.3333C13.4991 8.95768 13.6581 8.89183 13.7753 8.77462C13.8925 8.65741 13.9583 8.49844 13.9583 8.33268C13.9583 8.16692 13.8925 8.00795 13.7753 7.89074C13.6581 7.77353 13.4991 7.70768 13.3333 7.70768H6.66667ZM6.66667 11.041C6.50091 11.041 6.34193 11.1069 6.22472 11.2241C6.10751 11.3413 6.04167 11.5003 6.04167 11.666C6.04167 11.8318 6.10751 11.9907 6.22472 12.108C6.34193 12.2252 6.50091 12.291 6.66667 12.291H10.8333C10.9991 12.291 11.1581 12.2252 11.2753 12.108C11.3925 11.9907 11.4583 11.8318 11.4583 11.666C11.4583 11.5003 11.3925 11.3413 11.2753 11.2241C11.1581 11.1069 10.9991 11.041 10.8333 11.041H6.66667Z" fill="#008080"/>
+                            </svg>
+                            <h5>information</h5>
+            
+            
+                        </div>
+                        <div class="location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M14.9504 13.9553C16.2633 12.6417 17.0009 10.8605 17.0009 9.00333C17.0009 7.14612 16.2633 5.36492 14.9504 4.05133C14.3005 3.40101 13.5289 2.88512 12.6795 2.53314C11.8302 2.18116 10.9198 2 10.0004 2C9.08105 2 8.17067 2.18116 7.32133 2.53314C6.47198 2.88512 5.70032 3.40101 5.05043 4.05133C3.73753 5.36492 3 7.14612 3 9.00333C3 10.8605 3.73753 12.6417 5.05043 13.9553L6.57143 15.4543L8.61443 17.4393L8.74743 17.5573C9.52243 18.1853 10.6574 18.1453 11.3874 17.4393L13.8224 15.0693L14.9504 13.9553ZM10.0004 12.0003C9.20478 12.0003 8.44172 11.6843 7.87911 11.1217C7.3165 10.559 7.00043 9.79598 7.00043 9.00033C7.00043 8.20468 7.3165 7.44162 7.87911 6.87901C8.44172 6.3164 9.20478 6.00033 10.0004 6.00033C10.7961 6.00033 11.5591 6.3164 12.1218 6.87901C12.6844 7.44162 13.0004 8.20468 13.0004 9.00033C13.0004 9.79598 12.6844 10.559 12.1218 11.1217C11.5591 11.6843 10.7961 12.0003 10.0004 12.0003Z" fill="#008080"/>
+                            </svg>
+                            <h5>location</h5>
+            
+            
+                        </div>
+                        <div class="gallery">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.4274 8.39737C15.4274 9.0132 14.9066 9.51237 14.2641 9.51237C13.6224 9.51237 13.1016 9.01237 13.1016 8.39737C13.1016 7.78154 13.6224 7.2832 14.2641 7.2832C14.9057 7.2832 15.4274 7.78154 15.4274 8.39737Z" fill="#008080"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0303 4.61138C14.147 4.49805 13.0187 4.49805 11.5945 4.49805H8.40616C6.98116 4.49805 5.85283 4.49805 4.97033 4.61138C4.06199 4.72888 3.32533 4.97555 2.74533 5.53138C2.16533 6.08805 1.90783 6.79305 1.78533 7.66471C1.66699 8.50971 1.66699 9.59138 1.66699 10.9572V11.0405C1.66699 12.4064 1.66699 13.488 1.78533 14.3347C1.90783 15.2055 2.16533 15.9105 2.74533 16.4664C3.32533 17.023 4.06199 17.2697 4.97033 17.3864C5.85366 17.5014 6.98199 17.5014 8.40616 17.5014H11.5945C13.0195 17.5014 14.1478 17.5014 15.0303 17.3872C15.9387 17.2705 16.6753 17.0239 17.2553 16.4672C17.8353 15.9114 18.0928 15.2064 18.2153 14.3355C18.3337 13.4889 18.3337 12.4072 18.3337 11.0414V10.958C18.3337 9.59138 18.3337 8.51055 18.2153 7.66388C18.0928 6.79305 17.8353 6.08805 17.2553 5.53138C16.6753 4.97555 15.9387 4.72888 15.0303 4.61138ZM5.12533 5.71638C4.34533 5.81638 3.89616 6.00555 3.56699 6.31971C3.23949 6.63471 3.04283 7.06471 2.93783 7.81221C2.85449 8.41221 2.83533 9.16221 2.83116 10.1422L3.22283 9.81305C4.16033 9.02721 5.57199 9.07221 6.45199 9.91555L9.77699 13.103C9.94178 13.2584 10.1544 13.3533 10.3802 13.3721C10.6059 13.3908 10.8313 13.3324 11.0195 13.2064L11.2512 13.0505C11.7946 12.6871 12.4417 12.5109 13.0944 12.5484C13.7471 12.586 14.3697 12.8355 14.8678 13.2589L16.8737 14.9905C16.9553 14.7705 17.0178 14.5072 17.0628 14.1864C17.1695 13.423 17.1712 12.4164 17.1712 10.9997C17.1712 9.58305 17.1695 8.57638 17.0628 7.81221C16.9578 7.06471 16.7612 6.63471 16.4328 6.32055C16.1053 6.00555 15.6553 5.81721 14.8753 5.71638C14.0787 5.61388 13.0287 5.61221 11.5503 5.61221H8.45033C6.97199 5.61221 5.92199 5.61388 5.12533 5.71638Z" fill="#008080"/>
+                                <path d="M14.2386 2.17565C13.5219 2.08398 12.6102 2.08398 11.4727 2.08398H8.89773C7.76107 2.08398 6.84857 2.08398 6.1319 2.17565C5.39023 2.27148 4.7719 2.47398 4.28107 2.94232C4.01018 3.20233 3.80361 3.52189 3.67773 3.87565C4.09773 3.68398 4.57273 3.57065 5.10607 3.50065C6.0094 3.38398 7.1644 3.38398 8.62273 3.38398H11.8844C13.3427 3.38398 14.4969 3.38398 15.4011 3.50065C15.8661 3.56148 16.2877 3.65565 16.6669 3.80565C16.54 3.47948 16.3431 3.18508 16.0902 2.94315C15.5994 2.47398 14.9811 2.27148 14.2386 2.17648V2.17565Z" fill="#008080"/>
+                            </svg>
+            
+                            <h5>gallery</h5>
+                        </div>
+                        <div class="review">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M6.5625 10C7.47418 10 8.34852 9.63784 8.99318 8.99318C9.63784 8.34852 10 7.47418 10 6.5625C10 5.65082 9.63784 4.77648 8.99318 4.13182C8.34852 3.48716 7.47418 3.125 6.5625 3.125C5.65082 3.125 4.77648 3.48716 4.13182 4.13182C3.48716 4.77648 3.125 5.65082 3.125 6.5625C3.125 7.47418 3.48716 8.34852 4.13182 8.99318C4.77648 9.63784 5.65082 10 6.5625 10ZM14.375 10C15.038 10 15.6739 9.73661 16.1428 9.26777C16.6116 8.79893 16.875 8.16304 16.875 7.5C16.875 6.83696 16.6116 6.20107 16.1428 5.73223C15.6739 5.26339 15.038 5 14.375 5C13.712 5 13.0761 5.26339 12.6072 5.73223C12.1384 6.20107 11.875 6.83696 11.875 7.5C11.875 8.16304 12.1384 8.79893 12.6072 9.26777C13.0761 9.73661 13.712 10 14.375 10ZM3.125 11.25C2.62772 11.25 2.15081 11.4475 1.79917 11.7992C1.44754 12.1508 1.25 12.6277 1.25 13.125V13.2188C1.25 13.2188 1.25 16.875 6.5625 16.875C11.875 16.875 11.875 13.2188 11.875 13.2188V13.125C11.875 12.6277 11.6775 12.1508 11.3258 11.7992C10.9742 11.4475 10.4973 11.25 10 11.25H3.125ZM14.375 15.625C13.465 15.625 12.745 15.5012 12.1744 15.3044C12.4444 14.8669 12.5994 14.445 12.6869 14.1044C12.7507 13.8596 12.7911 13.6093 12.8075 13.3569C12.8088 13.3319 12.81 13.3094 12.81 13.29L12.8106 13.2638V13.125C12.8117 12.4331 12.5568 11.7652 12.095 11.25H17.2456C17.4432 11.2499 17.6388 11.2888 17.8213 11.3643C18.0038 11.4398 18.1696 11.5506 18.3093 11.6902C18.449 11.8299 18.5599 11.9957 18.6355 12.1781C18.7111 12.3606 18.75 12.5562 18.75 12.7537C18.75 12.7537 18.75 15.625 14.375 15.625Z" fill="#008080"/>
+                            </svg>
+            
+                            <h5>Review</h5>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="right-div">
+                <div class="first-row">
+                    <div>
+                        <span class="amount">&4500.00</span>
+                        <span class="person">/person</span>
+                        <button type="button" class="btn btn-success rounded-5 px-4">Standard</button>
+                    </div>
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path d="M28.658 19.8741L20.3357 28.095C19.784 28.6398 19.0357 28.9459 18.2555 28.9459C17.4753 28.9459 16.7271 28.6398 16.1753 28.095L7.85305 19.8756C7.1651 19.202 6.61862 18.4009 6.24499 17.5182C5.87135 16.6356 5.67792 15.6887 5.6758 14.732C5.67368 13.7753 5.86291 12.8275 6.23263 11.9433C6.60234 11.059 7.14527 10.2555 7.83022 9.57901C8.51518 8.90251 9.32869 8.36629 10.224 8.00114C11.1194 7.63599 12.0789 7.44909 13.0476 7.45119C14.0163 7.45328 14.975 7.64433 15.8687 8.01335C16.7625 8.38237 17.5736 8.9221 18.2555 9.60155C19.6407 8.26753 21.5023 7.52622 23.4369 7.53819C25.3716 7.55016 27.2236 8.31446 28.5918 9.66552C29.9599 11.0166 30.734 12.8456 30.7464 14.7564C30.7588 16.6672 30.0085 18.5058 28.658 19.8741Z" fill="#D9D9D9" fill-opacity="0.14" stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+            
+                    </div>
+            
+                </div>
+                <hr>
+                <!--  -->
+                <div class="second-row">
+                    <h4>Number of Tickets</h4>
+                    <div>
+                        <span>Adult (18+)</span>
+                        <div class="wrapper-op">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Youth <br>(17 and younger)</span>
+                        <div class="wrapper-opp">
+                            <span class="minuss">-</span>
+                            <span class="numm">02</span>
+                            <span class="pluss">+</span>
+                        </div>
+            
+                    </div>
+                    <hr>
+                </div>
+                <div class="sub">
+                    <h4>Choose additions</h4>
+                    <div class="check">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Accommodation</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox">
+                        <label for="">Transportation</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox">
+                        <label for="">Meals</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox">
+                        <label for="">Guide</label>
+                    </div>
+                    <hr>
+                </div>
+                <div class="sub">
+                    <h4>Choose Departure Date</h4>
+                    <!-- clander dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle rounded-4 px-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select date
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li>
+                            <label class="bold text-center" for="DatePickerInput">
+                            Select a date:
+                          </label>
+                          <div>
+                              <span id="ActiveDateInput">
+                              </span>
+                      
+                              <input id="DatePickerInput" type="date"
+                                    class="form-control mt-1 date " />
+                          </div>
+                          </li>
+                      </ul>
+                    </div>
+                    <hr>
+                </div>
+                <button type="button" class="btn btn-success px-5 rounded-4 btn-lg">Proceed</button>
+            </div>
+        </div>
+    </main>
+    <!-- section one starts here -->
+    <section class="sec-one">
+        <h3>Rock-Hewn Churches, Lalibela</h3>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum erat at risus viverra, a bibendum nisl rhoncus. Vivamus non rhoncus magna. Vivamus auctor hendrerit velit in vehicula. Etiam molestie cursus ante, et volutpat lorem consectetur non. Donec pretium ex ut nisi tincidunt blandit. Etiam mattis, elit eget suscipit sollicitudin, est quam pharetra ligula, vel placerat quam risus sit amet mi. Cras sodales scelerisque neque quis convallis. Morbi pellentesque metus magn</p>
+        <div class="sub-rec">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 9.99967H14.1667V14.1663H10V9.99967ZM15.8333 2.49967H15V0.833008H13.3333V2.49967H6.66667V0.833008H5V2.49967H4.16667C3.25 2.49967 2.5 3.24967 2.5 4.16634V15.833C2.5 16.7497 3.25 17.4997 4.16667 17.4997H15.8333C16.75 17.4997 17.5 16.7497 17.5 15.833V4.16634C17.5 3.24967 16.75 2.49967 15.8333 2.49967ZM15.8333 4.16634V5.83301H4.16667V4.16634H15.8333ZM4.16667 15.833V7.49967H15.8333V15.833H4.16667Z" fill="#EAC91A"/>
+                  </svg>
+                  <p>4 Days</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.49935 9.16667C8.15862 9.16667 8.80309 8.97117 9.35125 8.6049C9.89941 8.23863 10.3267 7.71803 10.5789 7.10895C10.8312 6.49986 10.8973 5.82964 10.7686 5.18303C10.64 4.53643 10.3225 3.94249 9.85637 3.47631C9.3902 3.01014 8.79625 2.69267 8.14965 2.56405C7.50305 2.43543 6.83282 2.50144 6.22374 2.75374C5.61465 3.00603 5.09405 3.43327 4.72778 3.98143C4.36151 4.5296 4.16602 5.17406 4.16602 5.83333C4.16602 6.71739 4.5172 7.56524 5.14233 8.19036C5.76745 8.81548 6.61529 9.16667 7.49935 9.16667ZM14.166 10.8333C14.6605 10.8333 15.1438 10.6867 15.5549 10.412C15.9661 10.1373 16.2865 9.74686 16.4757 9.29004C16.6649 8.83323 16.7144 8.33056 16.618 7.84561C16.5215 7.36066 16.2834 6.9152 15.9338 6.56557C15.5842 6.21594 15.1387 5.97783 14.6537 5.88137C14.1688 5.78491 13.6661 5.83442 13.2093 6.02364C12.7525 6.21286 12.362 6.53329 12.0873 6.94441C11.8126 7.35553 11.666 7.83888 11.666 8.33333C11.666 8.99638 11.9294 9.63226 12.3982 10.1011C12.8671 10.5699 13.503 10.8333 14.166 10.8333ZM17.4993 16.6667C17.7204 16.6667 17.9323 16.5789 18.0886 16.4226C18.2449 16.2663 18.3327 16.0543 18.3327 15.8333C18.332 15.0545 18.1131 14.2914 17.7007 13.6307C17.2883 12.97 16.699 12.4381 15.9996 12.0954C15.3003 11.7526 14.5188 11.6128 13.744 11.6917C12.9692 11.7705 12.232 12.065 11.616 12.5417C10.7998 11.7286 9.76106 11.1755 8.63087 10.952C7.50067 10.7285 6.32962 10.8447 5.26537 11.2859C4.20113 11.7272 3.29136 12.4736 2.6508 13.4312C2.01024 14.3888 1.66757 15.5146 1.66602 16.6667C1.66602 16.8877 1.75381 17.0996 1.91009 17.2559C2.06637 17.4122 2.27834 17.5 2.49935 17.5H12.4993C12.7204 17.5 12.9323 17.4122 13.0886 17.2559C13.2449 17.0996 13.3327 16.8877 13.3327 16.6667" fill="#EAC91A"/>
+                  </svg>
+                  <p>12+ Age</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M5 4.16699H15C15.221 4.16699 15.433 4.25479 15.5893 4.41107C15.7455 4.56735 15.8333 4.77931 15.8333 5.00033C15.8333 5.22134 15.7455 5.4333 15.5893 5.58958C15.433 5.74586 15.221 5.83366 15 5.83366H5C4.77899 5.83366 4.56702 5.74586 4.41074 5.58958C4.25446 5.4333 4.16667 5.22134 4.16667 5.00033C4.16667 4.77931 4.25446 4.56735 4.41074 4.41107C4.56702 4.25479 4.77899 4.16699 5 4.16699ZM17.5 1.66699V3.33366H2.5V1.66699H17.5ZM12.5 6.66699H14.1667V18.3337H12.5V6.66699ZM5.83333 6.66699H7.5V18.3337H5.83333V6.66699ZM9.16667 6.66699H10.8333V18.3337H9.16667V6.66699Z" fill="#EAC91A"/>
+                  </svg>
+                  <p>Historic</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.3131 2.5C9.73367 2.5023 9.17861 2.73351 8.76887 3.14325C8.35914 3.55299 8.12793 4.10805 8.12562 4.6875C8.12562 5.88875 9.11187 6.875 10.3131 6.875C11.5144 6.875 12.5006 5.88875 12.5006 4.6875C12.5006 3.48625 11.5144 2.5 10.3131 2.5ZM10.3131 3.75C10.8381 3.75 11.2506 4.1625 11.2506 4.6875C11.2506 5.2125 10.8381 5.625 10.3131 5.625C9.78812 5.625 9.37562 5.2125 9.37562 4.6875C9.37562 4.1625 9.78812 3.75 10.3131 3.75ZM6.93437 6.5625C6.77144 6.55189 6.60783 6.55839 6.44625 6.58187C6.10674 6.63945 5.78921 6.78806 5.5275 7.01188C4.98125 7.47563 4.66375 8.21313 4.43375 9.29688C4.36125 9.64625 4.38312 10.0075 4.55125 10.2931C4.72 10.5787 4.98375 10.7519 5.21562 10.8594C5.68187 11.0744 6.13812 11.1156 6.3875 11.1719L6.68062 9.96063C6.30437 9.87563 5.91812 9.80687 5.74312 9.72687C5.655 9.685 5.64312 9.66062 5.645 9.66813C5.63549 9.62954 5.63549 9.58921 5.645 9.55062C5.845 8.60375 6.13562 8.14687 6.34812 7.96875C6.56062 7.79063 6.73625 7.76125 7.12937 7.85125L7.40312 6.62125C7.24889 6.58803 7.09204 6.56837 6.93437 6.5625ZM8.02812 6.75812L7.11 10.9375C7.0075 11.4062 7.20062 11.9144 7.57875 12.2069L9.78562 13.9256L10.3325 17.5H11.6025L11.0162 13.7306C10.9683 13.4134 10.8006 13.1266 10.5475 12.9294L8.34062 11.2106L8.985 8.30062L9.62937 8.47625L10.7425 9.55125C11.1044 9.9 11.6487 9.9825 12.11 9.785L13.1256 9.35625V17.5H14.3756V6.875H13.1256V8.00812L11.6219 8.65188L10.5081 7.57812C10.3557 7.42876 10.1673 7.32114 9.96125 7.26562L8.02812 6.75812ZM7.2075 12.8906L6.68 14.4725L5.11812 17.5H6.52437L7.79437 15.0588C7.82562 14.9975 7.85312 14.9269 7.8725 14.8631L8.26312 13.7113L7.2075 12.8906Z" fill="#EAC91A"/>
+                  </svg>
+                  <p>Hiking</p>
+            </div>
+            
+
+        </div>
+        <table>
+            <tr>
+                
+                <td>Destination</td>
+                <td>Gondar</td>
+            
+            </tr>
+            <tr>
+                
+                <td>Meeting Point</td>
+                <td>Sky Light Hotel</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Dress Code</td>
+                <td>Comfortable athletic clothing, <br> Hiking shoes, hat and light jacket.</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Includes</td>
+                <td>Destination</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Excludes</td>
+                <td>Destination</td>
+                
+            </tr>
+        </table>
+        </div>
+    </section>
+    <section class="sec-two">
+        <h3>Attractions near by</h3>
+        <div class="sec-two-sub">
+            <div class="card bg-dark text-white">
+                <img src="./images/pic_one.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                 
+                  <p class="card-text ">Church of St. George</p>
+                  
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="./images/pic_two.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  
+                    <p class="card-text ">Church of St. George</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="./images/pic_three.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  
+                    <p class="card-text ">Church of St. George</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="./images/pic_four.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  
+                    <p class="card-text ">Church of St. George</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
+        <footer class=" text-white pt-4">
+            <div class="container">
+                <div class="row">
+                     <div class="footer-logo">
+                    <img src="your-logo.png" alt="Logo" height="50">
+                  </div>
+                </div>
+              <div class="row">
+                <!-- Logo -->
+                <div class=" col-md-4">
+                  <!-- About and Contact -->
+                  <div class="footer-about-contact">
+                    <h5>About</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum erat at risus viverra, a bibendum nisl rhoncus. Vivamus </p>
+                    <h5>Contact Us</h5>
+                    <p>+0123456789</p>
+                    <p>info@sethio.com</p>
+                  </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- Search Box -->
+                <div class="col-md-4">
+                  <h5>Subscribe for more</h5>
+                  <form>
+                    <div class="footer-search-form">
+                      <input type="text" class="form-control" placeholder="Enter your email"/>
+                      <button class="fa-subscribe">subscribe</button>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      <div class="footer-social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <!-- Copyright -->
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p id="copyright">
+                    &copy; Copyrights @seethio 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    
+
+
+    
+    <!--qty adder -->
+    <script>
+        const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        num = document.querySelector(".num");
+        let a = 1;
+        plus.addEventListener("click", ()=>{
+        a++;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+        });
+
+        minus.addEventListener("click", ()=>{
+        if(a > 1){
+            a--;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        }
+        });
+
+
+        // for opp class
+
+        
+        const pluss = document.querySelector(".pluss"),
+        minuss = document.querySelector(".minuss"),
+        numm = document.querySelector(".numm");
+        let b = 1;
+        pluss.addEventListener("click", ()=>{
+        b++;
+        b = (b < 10) ? "0" + b : b;
+        numm.innerText = b;
+        });
+
+        minuss.addEventListener("click", ()=>{
+        if(b > 1){
+            b--;
+            b = (b < 10) ? "0" + b : b;
+            numm.innerText = b;
+        }
+        });
+
+    </script>
     <script src="./information.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
