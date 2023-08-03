@@ -232,7 +232,7 @@ h4{
     position: absolute;
     left: 150px;
     top: 665px;
-    width:60%;
+    /* width:60%; */
     padding: 0.85rem;
     display: flex;
     gap: 1.5rem;
@@ -568,7 +568,22 @@ tr{
     color: #008080;
     margin-bottom: 5rem;
   }
+  @media screen and (max-width: 1259px) {
+    
+    .imageDiv .imageContainer img{
+        position: absolute;
+        margin-left: 20px;
 
+
+    }
+    .line hr{
+        display:block;
+    }
+    .tag{
+        display: none;
+    }
+    
+  }
 
 
   @media screen and (max-width: 992px) {
@@ -585,6 +600,31 @@ tr{
         /* padding: 1rem; */
         width: 35vw;
         height: 28vw;
+        object-fit: cover;
+        
+	}
+    .container-fluid{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+	
+	
+}
+@media screen and (max-width: 768px) {
+	
+	.sec-one .container {
+		grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        grid-gap: 0.25rem;
+        
+        
+	}
+	.sec-one .container img{
+		grid-template-columns: repeat(4, 1fr);
+        /* padding: 1rem; */
+        width: 30vw;
+        height: 20vw;
         object-fit: cover;
         
 	}
