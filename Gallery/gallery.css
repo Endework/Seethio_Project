@@ -117,6 +117,47 @@ nav{
     padding-top: 0;      
     
 }
+
+.toggle-btn {
+    color:black;
+	display: none;
+	font-size: larger;
+    
+	
+	
+}
+.mobile-menu {
+	position: absolute;
+	z-index: 10;
+	top: -200vh;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 2rem;
+	transition: 0.3s ease-in;
+}
+.mobile-menu li a{
+    color: #FCFFFF;
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+}
+.mobile-menu span hr{
+    height: 9px;
+    border-radius: 7px;
+    background:#f4cc05;  
+    padding-top: 0;
+    width:150px      
+    
+}
+.mobile-menu span a{
+    color: #69D6D6;
+
+}
 .line hr{
     position: absolute;
     width: 500px;
@@ -530,21 +571,27 @@ tr{
 
 
 
-  @media screen and (max-width: 871px){
-    .menu-2{
-        max-width: 50%;
+  @media screen and (max-width: 992px) {
+	
+	.sec-one .container {
+		grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        grid-gap: 0.25rem;
         
-    }
-    .wrapper-op span{
-        display: inline;
-    }
-    .wrapper-op span{
-        display: inline;
-    }
-    .wrapper-opp span{
-        display: inline;
-    }
-  }
+        
+	}
+	.sec-one .container img{
+		grid-template-columns: repeat(4, 1fr);
+        /* padding: 1rem; */
+        width: 35vw;
+        height: 28vw;
+        object-fit: cover;
+        
+	}
+
+	
+	
+}
 
 
 
