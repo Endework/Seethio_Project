@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup {
+  width: 97%;
+  margin: 1rem auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("./images/bg.jpg");
+  /* background: url('./images/bg.jpg'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  width: 90rem;
+}
+
+.form__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.form-text-input {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 100px;
+  background-color: #69d6d6;
+  border: none;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.form-text-input::placeholder {
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #000;
+}
+
+.sign-up-form__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-form__guide,
+.login-link {
+  color: #fff;
+}
+
+.form-btn {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  padding: 1.3rem 2rem;
+  text-transform: capitalize;
+  border-radius: 100px;
+  cursor: pointer;
+}
