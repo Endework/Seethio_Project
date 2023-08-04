@@ -1,22 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./booking.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./booking.css" />
     <title>Booking</title>
-</head>
-<body>
-    <header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="booking-container">
+      <!-- the home section -->
+      <section class="home"></section>
 
-    </header>
-    <main>
-        
-    </main>
-    <footer>
+      <form class="booking-form">
+        <div class="booking-form__top">
+          <p class="booking-form__top--text">book your flight</p>
+          <img
+            src="./images/aircraft.jpg"
+            alt="an aircraft"
+            class="booking-form__top--image"
+          />
+        </div>
+        <div class="booking-form__radios">
+          <div class="booking-form__radio">
+            <input
+              type="radio"
+              name="trip-type"
+              id="roundTrip"
+              value="round trip"
+            />
+            <span class="custom-radio"></span>
+            <label for="roundTrip" class="form__radio-labels">round trip</label>
+          </div>
+          <div class="booking-form__radio">
+            <input type="radio" name="trip-type" id="oneWay" value="one way" />
+            <span class="custom-radio"></span>
+            <label for="oneWay" class="form__radio-labels">one way</label>
+          </div>
+          <div class="booking-form__radio">
+            <input
+              type="radio"
+              name="trip-type"
+              id="multiCity"
+              value="multi-city"
+            />
+            <span class="custom-radio"></span>
+            <label for="multiCity" class="form__radio-labels">multi-city</label>
+          </div>
+        </div>
 
-    </footer>
+        <input
+          type="text"
+          name=""
+          id="from"
+          class="booking-form__text-input"
+          placeholder="flying from"
+        />
+        <input
+          type="text"
+          name=""
+          id="to"
+          class="booking-form__text-input"
+          placeholder="flying to"
+        />
+        <div class="form__flex">
+          <div class="form-group">
+            <label for="checkIn" class="form__label">check in</label>
+            <input
+              type="text"
+              name=""
+              id="checkIn"
+              class="booking-form__text-input"
+              placeholder="check in"
+            />
+          </div>
+          <div class="form-group">
+            <label for="checkOut" class="form__label">check out</label>
+            <input
+              type="text"
+              name=""
+              id="checkOut"
+              class="booking-form__text-input"
+              placeholder="check out"
+            />
+          </div>
+        </div>
 
+        <div class="form__flex">
+          <div class="form__group">
+            <label for="travelClass" class="form__label">travel class</label>
+            <select name="" id="travelClass" class="booking-form__text-input">
+              <option value="business">Business</option>
+              <option value="economic">Economic</option>
+              <option value="first class">First Class</option>
+              <option value="vip">VIP</option>
+              <option value="vvip">VVIP</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults" class="form__label">number of adults</label>
+            <input
+              type="number"
+              name=""
+              id="adults"
+              class="booking-form__text-input"
+              placeholder="adults"
+            />
+          </div>
+          <div class="form-group">
+            <label for="children">number of children</label>
+            <input
+              type="number"
+              name=""
+              id="children"
+              class="booking-form__text-input"
+              placeholder="number of children"
+            />
+          </div>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">book</button>
+      </form>
+    </div>
     <script src="./booking.js"></script>
-</body>
+  </body>
 </html>
