@@ -5,9 +5,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
+
 
 /* nav bar styles */
 
@@ -25,27 +23,86 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+header {
+  min-height: 100vh;
+  background: linear-gradient(180deg,
+          rgba(21, 18, 18, 0.4),
+          rgba(40, 39, 39, 0.4)), url('https://media.istockphoto.com/id/946171376/photo/ethiopian-landscape-and-blue-sky.jpg?s=612x612&w=0&k=20&c=OGpitM33JSUlxtCUx0rv-xdnv0TqQeIXgDzL-uHT-z8=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* nav bar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navBar #contact{
+ border-bottom: 3px solid yellow;
+}
+.imgDiv {
+  position: relative;
+  width: 50%;
+}
+
+header .imgDiv img {
+  flex-basis: 25%;
+}
+
+header .imgDiv p {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 0;
+}
+
+.navBar .desktop-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  align-items: center;
+}
+
+
+.desktop-menu li {
+  font-size: 1rem;
+  margin-inline: 1rem;
+  list-style: none;
+  color: #fff;
+}
+
+.navBar .desktop-menu a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
 
 .home {
-  min-height: 90vh;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./Images/bg-home.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 2rem;
+  margin-block: 4rem;
+  
+ 
 }
 
 .home__text {
-  width: 88rem;
+  
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
-  line-height: 1.4;
-  transform: translateY(5rem);
+  line-height: 4.5rem;
+  /* line-height: 1.4; */
+  /* transform: translateY(5rem); */
+ 
 }
 
 .contact-container {

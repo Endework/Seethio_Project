@@ -27,7 +27,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.navBar #about{
+  border-bottom: 3px solid yellow;
+}
 
 .navBar .desktop-menu {
   display: flex;

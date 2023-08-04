@@ -795,12 +795,24 @@ footer {
     align-items: center;
     padding-left: 10px;
     margin-bottom: 20px;
-  }
-  
-  .footer-logo img {
+    position: relative;
+    
+}
+
+.footer-logo img {
     height: 50px;
     margin-right: 10px;
-  }
+    
+}
+.footer-logo p{
+    font-size: 0.75rem;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    
+    
+    
+}
   .footer-about-contact {
     margin-bottom: 20px;
   }
