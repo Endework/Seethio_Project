@@ -10,46 +10,14 @@ header{
 }
 /* nav bar starts here */
 
-nav{
+.navBar {
     display: flex;
     justify-content: space-between;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-left: 3rem;
-    padding-right: 6rem; 
-    background-color: transparent;
-}
-.nav li a{
-    color: #FCFFFF;
-    font-family: "Poppins",sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-
-}
-.logo p{
-    color: #FFF;
-    text-align: center;
-    font-family: "Jomhuria",cursive;
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-}
-.nav li a:hover{
-    color:  #008080;
+    align-items: center;
+    padding: 0px 8px 0px 8px;
+   
 }
 
-.nav span hr{
-    height: 9px;
-    border-radius: 7px;
-    background:#f4cc05;  
-    padding-top: 0;      
-    
-}
-.nav span hr:hover{
-   color:  #008080;      
-    
-}
 .imgDiv {
     position: relative;
     width: 50%;
@@ -67,34 +35,81 @@ header .imgDiv p {
     right: 0;
 }
 
-.toggle-btn {
-    color:black;
-	display: none;
-	font-size: larger;
-	
+.navBar .desktop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    align-items: center;
 }
-.mobile-menu{
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Hide the checkbox */
+.menu-icon {
     display: none;
 }
-.nav{
-    display: flex;
-    gap: 1.2rem;
+
+.desktop-menu li {
+    font-size: 1rem;
+    margin: 1rem;
+    list-style: none;
+    color: #fff;
+}
+
+.desktop-menu li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+
+    background-color: #ffd700;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.desktop-menu li a:hover::after {
+    width: 3%;
+    margin-left: 15px;
+}
+
+.desktop-menu li a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #f0f0f0;
+    min-width: 160px;
+    z-index: 999;
+    top: 0;
+    right: 0;
 
 }
-.nav span a{
-    color: #69D6D6;
 
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
 }
-.nav span hr{
-    height: 9px;
-    border-radius: 7px;
-    background:#f4cc05;  
-    padding-top: 0;      
-    
-}
-.nav span hr:hover{
-   color:  #008080;      
-    
+
+.desktop-menu li:hover .dropdown-menu {
+    display: block;
 }
 /* nav bar ends */
 
