@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./contactus.css" />
+    <link rel="stylesheet" href="../home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link
       rel="stylesheet"
@@ -20,13 +21,28 @@
             <img src="../Home images/Logo (1).svg" alt="">
             <p class="seethio">seethio</p>
         </div>
+         <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </label>
         <ul class="desktop-menu">
-            <li ><a href="../index.html">Home</a></li>
-            <li><a href="./AboutUs/aboutUs.html">About us</a></li>
-            <li><a href="#" class="dropdown">Services </a></li>
-            <li id="contact"><a href="#">Contact us</a></li>
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../AboutUs/aboutUs.html">About us</a></li>
+            <li class="drop-down">
+                <a href="#" class="dropdown" id="service-dropdown">
+                    Services <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="" href="../Acommodation/accomodation.html">Accommodation</a></li>
+                    <li><a class="" href="../Booking/booking.html">Booking</a></li>
+                    <li><a class="" href="#">Reservation</a></li>
+                    <li><a class="" href="#">Live weather</a></li>
+                    <li><a class="" href="#">Setting</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact us</a></li>
         </ul>
-      </nav>
+    </nav>
       <div class="home">
         <h3 class="home__text">
           Seethio is your all-in-one website for your next adventure to Ethiopia

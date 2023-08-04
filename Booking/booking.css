@@ -5,13 +5,122 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
+
 
 html,
 body {
   overflow-x: hidden;
+}
+
+header {
+  min-height: 50vh;
+  background: linear-gradient(180deg,
+          rgba(21, 18, 18, 0.4),
+          rgba(40, 39, 39, 0.4)), url('https://media.istockphoto.com/id/946171376/photo/ethiopian-landscape-and-blue-sky.jpg?s=612x612&w=0&k=20&c=OGpitM33JSUlxtCUx0rv-xdnv0TqQeIXgDzL-uHT-z8=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8px 0px 8px;
+}
+
+.imgDiv {
+  position: relative;
+  width: 50%;
+}
+
+header .imgDiv img {
+  flex-basis: 25%;
+}
+
+header .imgDiv p {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 0;
+}
+
+.navBar .desktop-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Hide the checkbox */
+.menu-icon {
+  display: none;
+}
+
+.desktop-menu li {
+  font-size: 1rem;
+  margin: 1rem;
+  list-style: none;
+  color: #fff;
+}
+
+.desktop-menu li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+
+  background-color: #ffd700;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.desktop-menu li a:hover::after {
+  width: 3%;
+  margin-left: 15px;
+}
+
+.desktop-menu li a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.drop-down {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  z-index: 999;
+  top: 0;
+  right: 0;
+
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.desktop-menu li:hover .dropdown-menu {
+  display: block;
 }
 
 .u-marg-right {
@@ -27,13 +136,13 @@ body {
   padding: 0.5rem 1rem;
 }
 
-.home {
+/* .home {
   min-height: 80vh;
   background: url(./images/bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .booking-form {
   width: 50%;
@@ -152,4 +261,17 @@ input[type="radio"]:checked + .custom-radio::after {
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+}
+.click button{
+  display: inline !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  
+
+}
+a{
+  text-decoration: none;
 }

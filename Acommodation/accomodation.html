@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Add Font Awesome for the search icon and star icons -->
     <link rel="stylesheet" href="./accomodation.css">
+    <link rel="stylesheet" href="../home.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
     
@@ -17,36 +18,33 @@
 <body>
     <!-- Header with background image and transparent navbar -->
     <header class="header">
-        <!-- Transparent Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html"><img src="../Home images/Logo (1).svg" alt=""></a>
-                <p>seethio</p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link " href="../Acommodation/accomodation.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../AboutUs/aboutUs.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ContactUs/contactus.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navBar">
+            <div class="imgDiv">
+                <img src="../Home images/Logo (1).svg" alt="">
+                <p class="seethio">seethio</p>
             </div>
-        </nav>
-        <!-- End Transparent Navbar -->
+             <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+            <ul class="desktop-menu">
 
-        <div class="header-content">
-            <p class="header-text">Your Text Here</p>
-            <img src="path/to/small-image.jpg" alt="Small Image" class="header-image">
-        </div>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../AboutUs/aboutUs.html">About us</a></li>
+                <li class="drop-down">
+                    <a href="#" class="dropdown" id="service-dropdown">
+                        Services <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="#">Accommodation</a></li>
+                        <li><a class="" href="../Booking/booking.html">Booking</a></li>
+                        <li><a class="" href="#">Reservation</a></li>
+                        <li><a class="" href="#">Live weather</a></li>
+                        <li><a class="" href="#">Setting</a></li>
+                    </ul>
+                </li>
+                <li><a href="../ContactUs/contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Search Section -->
     <section class="search-section">

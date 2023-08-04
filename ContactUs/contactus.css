@@ -23,6 +23,10 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
+
+
+
 header {
   min-height: 100vh;
   background: linear-gradient(180deg,
@@ -32,17 +36,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* nav bar */
+
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  padding: 0px 8px 0px 8px;
 }
 
-.navBar #contact{
- border-bottom: 3px solid yellow;
-}
 .imgDiv {
   position: relative;
   width: 50%;
@@ -68,19 +69,73 @@ header .imgDiv p {
   align-items: center;
 }
 
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Hide the checkbox */
+.menu-icon {
+  display: none;
+}
 
 .desktop-menu li {
   font-size: 1rem;
-  margin-inline: 1rem;
+  margin: 1rem;
   list-style: none;
   color: #fff;
 }
 
-.navBar .desktop-menu a {
+.desktop-menu li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+
+  background-color: #ffd700;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.desktop-menu li a:hover::after {
+  width: 3%;
+  margin-left: 15px;
+}
+
+.desktop-menu li a {
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   color: #fff;
+}
+
+.drop-down {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  z-index: 999;
+  top: 0;
+  right: 0;
+
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.desktop-menu li:hover .dropdown-menu {
+  display: block;
 }
 
 .home {

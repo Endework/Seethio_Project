@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../home.css">
     <link rel="stylesheet" href="./booking.css" />
     <title>Booking</title>
     <link
@@ -10,7 +11,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
+
+  
   <body>
+    <header>
+      <nav class="navBar">
+        <div class="imgDiv">
+            <img src="../Home images/Logo (1).svg" alt="">
+            <p class="seethio">seethio</p>
+        </div>
+         <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </label>
+        <ul class="desktop-menu">
+    
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../AboutUs/aboutUs.html">About us</a></li>
+            <li class="drop-down">
+                <a href="#" class="dropdown" id="service-dropdown">
+                    Services <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="" href="../Acommodation/accomodation.html">Accommodation</a></li>
+                    <li><a class="" href="">Booking</a></li>
+                    <li><a class="" href="#">Reservation</a></li>
+                    <li><a class="" href="#">Live weather</a></li>
+                    <li><a class="" href="#">Setting</a></li>
+                </ul>
+            </li>
+            <li><a href="./ContactUs/contactus.html">Contact us</a></li>
+        </ul>
+    </nav>
+    </header>
     <div class="booking-container">
       <!-- the home section -->
       <section class="home"></section>
@@ -123,7 +155,9 @@
         </div>
         <button type="submit" class="submit-btn" id="submit-btn">book</button>
       </form>
+      <a class="click" href="../my preferences/preference.html"><button>Proceed</button></a>
     </div>
     <script src="./booking.js"></script>
   </body>
 </html>
+
