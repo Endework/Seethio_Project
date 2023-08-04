@@ -133,7 +133,9 @@ header .imgDiv p {
     outline: none;
     transition: all 0.3s ease;
 }
-
+.divContainer h1 span{
+    color:yellow
+}
 .divContainer .text-div .startExploring:hover {
     background-color: transparent;
     color: #fff;
