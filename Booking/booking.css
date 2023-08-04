@@ -1,5 +1,155 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.u-marg-right {
+  margin-right: 2rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.booking-container {
+  padding: 0.5rem 1rem;
+}
+
+.home {
+  min-height: 80vh;
+  background: url(./images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.booking-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.booking-form__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-form__top--text {
+  font-size: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  color: #008080;
+  font-weight: 600;
+}
+
+.booking-form__top--image {
+  --size: 25rem;
+  width: var(--size);
+  max-width: var(--size);
+  min-width: var(--size);
+  height: var(--size);
+  max-height: var(--size);
+  min-height: var(--size);
+  border-radius: 8px;
+}
+
+.booking-form__radios {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.booking-form__radio {
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.custom-radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e97451;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #e97451;
+  border-radius: 50%;
+}
+
+.form__radio-labels {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #000;
+  margin-left: 0.5rem;
+}
+
+.form__label {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.booking-form__text-input {
+  display: block;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: inherit;
+}
+
+.booking-form__text-input::placeholder {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: inherit;
+}
+
+.form__flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form__group,
+.form-group {
+  flex-grow: 1;
+}
+
+.submit-btn {
+  display: block;
+  min-width: 100%;
+  padding: 2rem;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
