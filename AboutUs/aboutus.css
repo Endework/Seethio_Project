@@ -21,7 +21,22 @@ header {
 .seethio{
   margin-left: 2rem;
 }
+.imgDiv {
+  position: relative;
+  width: 50%;
+}
 
+header .imgDiv img {
+  flex-basis: 25%;
+}
+
+header .imgDiv p {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 0;
+}
 .navBar {
   display: flex;
   justify-content: space-between;
