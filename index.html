@@ -21,10 +21,25 @@
                 <img src="./Home images/Logo (1).svg" alt="">
                 <p class="seethio">seethio</p>
             </div>
+             <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
             <ul class="desktop-menu">
-                <li id="home"><a href="#">Home</a></li>
+
+                <li><a href="#">Home</a></li>
                 <li><a href="./AboutUs/aboutUs.html">About us</a></li>
-                <li><a href="#" class="dropdown">Services </a></li>
+                <li class="drop-down">
+                    <a href="#" class="dropdown" id="service-dropdown">
+                        Services <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="./Acommodation/accomodation.html">Accommodation</a></li>
+                        <li><a class="" href="./Booking/booking.html">Booking</a></li>
+                        <li><a class="" href="#">Reservation</a></li>
+                        <li><a class="" href="#">Live weather</a></li>
+                        <li><a class="" href="#">Setting</a></li>
+                    </ul>
+                </li>
                 <li><a href="./ContactUs/contactus.html">Contact us</a></li>
             </ul>
         </nav>
@@ -36,7 +51,7 @@
                         day
                         of your trip</p>
                     <button class="startExploring">Start Exploring!</button>
-                    <a href="./SignUp/signup.html"><button class="getStarted">Get Started</button></a>
+                    <button class="getStarted">Get Started</button>
                 </div>
                 <div>
                     <div class="imageDiv">
@@ -58,7 +73,7 @@
                         </div>
                     </div>
                     <div class="spans">
-                        <span class="span1">< </span>
+                        <span class="span1"> < </span>
                         <span class="span2">></span>
                         <span class="span3"></span>
                         <span class="span4"></span>
@@ -112,7 +127,7 @@
             <div class="secTwoDivContainer">
                 <p class="secTwoIcon"><i class="fa-solid fa-book-open"></i></p>
                 <a href="#">
-                    <h3>Landmarks</h3>
+                    <h3>Rivers</h3>
                 </a>
             </div>
         </div>
@@ -127,7 +142,7 @@
                 <p class="secThreeText2">1.3k</p>
             </div>
             <div class="valley item">
-                <img src="https://media.istockphoto.com/id/968630976/photo/colorful-landscape-with-high-himalayan-mountains-beautiful-curving-river-green-forest-blue-sky.webp?b=1&s=170667a&w=0&k=20&c=RrU1MmvldB70ra3HLmNAHFUU4FJHHFNVp3mju3ctl5I="
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScPrOMLI7b73TEzTh3wgxIcKXuBtrrOlx6IJZ17zc2XxkkCR8IbGHguPtBTRKchfwokv4&usqp=CAU"
                     alt="">
                 <p class="secThreeText1">THE VALLEYS</p>
                 <p class="secThreeText2">1.3k</p>
@@ -139,7 +154,7 @@
                 <p class="secThreeText2">1.3k</p>
             </div>
             <div class="mountain item">
-                <img src="https://media.istockphoto.com/id/1288385045/photo/snowcapped-k2-peak.jpg?s=612x612&w=0&k=20&c=sfA4jU8kXKZZqQiy0pHlQ4CeDR0DxCxXhtuTDEW81oo="
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7zRvh_qqutIflU1WTRWpncU74b_8Y2A_KOvnaHb7MPb6Z0mgu"
                     alt="">
                 <p class="secThreeText1">MOUNTAIN TOPS</p>
                 <p class="secThreeText2">1.3k</p>
@@ -157,7 +172,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio obcaecati vitae pariatur illo quos
             perspiciatis ab nam numquam voluptatem voluptatum eligendi excepturi cum voluptas incidunt, odio fugit
             cupiditate nesciunt.</p>
-        <div class="secFourDiv">
+        <div class="secFourDiv " >
             <div>
                 <h1>27000+</h1>
                 <p>Visitors</p>
@@ -176,8 +191,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-logo">
-                    <img src="./Home images/Logo (1).svg" alt="Logo" height="50">
-                    <p>seethio</p>
+                    <img src="your-logo.png" alt="Logo" height="50">
                 </div>
             </div>
             <div class="row">
@@ -186,7 +200,7 @@
                     <!-- About and Contact -->
                     <div class="footer-about-contact">
                         <h5>About</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum erat at risus viverra, a bibendum nisl rhoncus. Vivamus .</p>
+                        <p>Description about your company or website.</p>
                         <h5>Contact Us</h5>
                         <p>+0123456789</p>
                         <p>info@sethio.com</p>
@@ -196,10 +210,10 @@
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled ">
-                        <li ><a href="#">Home</a></li>
-                        <li><a href="./AboutUs/aboutUs.html">About Us </a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="./ContactUs/contactus.html">Contact Us</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./AboutUs/aboutUs.html">About</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="./ContactUs/contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <!-- Search Box -->
@@ -228,7 +242,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p id="copyright">
-                        &copy; seethio
+                        &copy; Your Company Name
                     </p>
                 </div>
             </div>

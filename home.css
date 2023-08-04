@@ -22,10 +22,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 8px 0px 8px;
 }
-.navBar #home{
-   border-bottom: 3px solid yellow;
-}
+
 .imgDiv {
     position: relative;
     width: 50%;
@@ -51,19 +50,98 @@ header .imgDiv p {
     align-items: center;
 }
 
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Hide the checkbox */
+.menu-icon {
+    display: none;
+}
 
 .desktop-menu li {
     font-size: 1rem;
-    margin-inline: 1rem;
+    margin: 1rem;
     list-style: none;
     color: #fff;
 }
 
-.navBar .desktop-menu a {
+.desktop-menu li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+
+    background-color: #ffd700;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.desktop-menu li a:hover::after {
+    width: 3%;
+    margin-left: 15px;
+}
+
+.desktop-menu li a {
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
     color: #fff;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #f0f0f0;
+    min-width: 160px;
+    z-index: 999;
+    top: 0;
+    right: 0;
+
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.desktop-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+.divContainer .text-div .startExploring,
+.divContainer .text-div .getStarted {
+    margin-block: 2rem;
+    padding: 0.6rem 1rem;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #f8cb69f7;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.divContainer .text-div .startExploring:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #f8cb69f7;
+}
+
+.divContainer .text-div .getStarted:hover {
+    color: #fff;
+    border: 2px solid #f8cb69f7;
 }
 
 .divContainer2 {
@@ -88,7 +166,7 @@ header .imgDiv p {
 }
 
 .divContainer h1 span {
-    color: #f0e39e;
+    color: linear-grad #f0e39e;
 }
 
 .divContainer .text-div .startExploring {
@@ -196,14 +274,19 @@ header .imgDiv p {
     align-items: center;
     gap: 2rem;
     width: 100%;
+
 }
 
 .secOne .secOneImage img {
+    object-fit: cover;
     margin-inline: 2rem;
     border-bottom-left-radius: 85%;
     border-bottom-right-radius: 5%;
     border-top-right-radius: 120%;
     width: 350px;
+    border-bottom: 3px solid #008080;
+    padding-left: 8px;
+    padding-bottom: 6px;
 }
 
 .secOne .secOneText h2 {
@@ -443,23 +526,11 @@ footer {
     align-items: center;
     padding-left: 10px;
     margin-bottom: 20px;
-    position: relative;
-    
 }
 
 .footer-logo img {
     height: 50px;
     margin-right: 10px;
-    
-}
-.footer-logo p{
-    font-size: 0.75rem;
-    position: absolute;
-    top: 40%;
-    left: 3%;
-    
-    
-    
 }
 
 .footer-about-contact {
@@ -545,6 +616,129 @@ footer {
 } */
 
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+
+
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .menu-icon:checked~ul.desktop-menu {
+        display: block;
+        position: absolute;
+        top: 70px;
+        /* Adjust as needed */
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    /* Style the dropdown menu items */
+    .menu-icon:checked~ul.desktop-menu li {
+        display: block;
+    }
+
+    /* Show the mobile menu icon */
+    .navBar .imgDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navBar .imgDiv .seethio {
+        display: none;
+    }
+
+    .navBar .imgDiv img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    /* Show the dropdown menu */
+    .navBar ul li {
+        display: block;
+    }
+
+    /* Style the mobile menu */
+    .mobile-menu {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Style the dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    .navBar li:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li {
+        padding: 8px;
+    }
+
+    .secTwoDivContainer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secTwoIcon {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+    .secTwo {
+        display: block;
+    }
+
+    .secTwoText {
+        text-align: center;
+    }
+
+    .secTwoDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secFourDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secFourDiv div {
+        text-align: center;
+    }
+
+    .secFourDiv h1 {
+        font-size: 36px;
+    }
+}
 
 
 /* font-family: 'Poppins', sans-serif; */
