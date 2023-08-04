@@ -40,10 +40,6 @@ header .imgDiv p {
     left: 5%;
     right: 0;
 }
-/* footer logo */
-
-
-/* end */
 
 .navBar .desktop-menu {
     display: flex;
@@ -68,19 +64,6 @@ header .imgDiv p {
     color: #fff;
 }
 
-
-.navBar .desktop-menu .dropdown1 option{
-    border-color: transparent;
-    background: transparent;
-    font-size: 0.3rem;
-    /* color: #fff; */
-}
-
-
-  
-
-
-
 .divContainer2 {
     display: flex;
     justify-content: center;
@@ -103,7 +86,7 @@ header .imgDiv p {
 }
 
 .divContainer h1 span {
-    color: linear-grad #f0e39e;
+    color: #f0e39e;
 }
 
 .divContainer .text-div .startExploring {
