@@ -65,6 +65,32 @@ nav{
     letter-spacing: 1.5px;
 
 }
+
+.nav span hr:hover{
+    color:  #008080;      
+     
+ }
+.nav  a:hover{
+    color:  #008080;      
+     
+ }
+
+.imgDiv {
+    position: relative;
+    width: 50%;
+}
+
+header .imgDiv img {
+    flex-basis: 25%;
+}
+
+header .imgDiv p {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 0;
+}
 .logo p{
     color: #FFF;
     text-align: center;
@@ -189,20 +215,20 @@ h4{
 }
 .menu{
     position: absolute;
-    left: 150px;
+    left: 125px;
     top: 665px;
-    width: 60%;
-    /* width: 40vw; */
-    padding: 0.85rem;
+    /* width:60%; */
+    padding:  1.5rem;
     display: flex;
     gap: 1.5rem;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px solid grey;
+    border-radius:15px;
     background: rgba(255, 252, 252, 0.81);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     text-align: center;
     justify-content: center;
     border-style: none;
+    
 }
 .gallery ,.location, .info{
     border-right: 1px solid grey;
@@ -222,10 +248,34 @@ h4{
 }
 .location{
     color: #008080;
+}
+    /*  */
+
+
+.review a ,.gallery a, .info a{
+    
+    padding-right: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    color: black;
+    
+    
+}
+    
+    
+.location a{
+    color: #008080;
+    font-size: 20px;
+    font-weight: 500;
     
 
 
 }
+
+
+
 .text span{
     color: #000;
     text-align: center;

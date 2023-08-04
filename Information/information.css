@@ -59,6 +59,21 @@ nav{
     letter-spacing: 1.5px;
 
 }
+
+.nav span hr{
+    height: 9px;
+    border-radius: 7px;
+    background:#f4cc05;  
+    padding-top: 0;      
+    
+}
+.nav span hr:hover{
+   color:  #008080;      
+    
+}
+.nav li a:hover{
+    color:  #008080;
+}
 .logo p{
     color: #FFF;
     text-align: center;
@@ -67,7 +82,22 @@ nav{
     font-weight: 400;
     letter-spacing: 1.5px;
 }
+.imgDiv {
+    position: relative;
+    width: 50%;
+}
 
+header .imgDiv img {
+    flex-basis: 25%;
+}
+
+header .imgDiv p {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 0;
+}
 .moon{
     position: relative;
     font-size: 12px;
@@ -163,7 +193,7 @@ h4{
 .tag svg{
     width: 100%;
     position: absolute;
-    right: 325px;
+    right: 370px;
     top: 35px;
 
 }
@@ -174,10 +204,10 @@ h4{
 }
 .menu{
     position: absolute;
-    left: 150px;
+    left: 165px;
     top: 665px;
     width:60%;
-    padding: 0.85rem;
+    padding: 1.5rem;
     display: flex;
     gap: 1.5rem;
     border: 1px solid grey;
@@ -189,7 +219,7 @@ h4{
     border-style: none;
     
 }
-.gallery ,.location, .info{
+.gallery ,.location,  .review{
     border-right: 1px solid black;
     padding-right: 1rem;
     font-size: 14px;
@@ -198,15 +228,36 @@ h4{
     text-transform: capitalize;
     
 }
-.review{
+.info{
+    border-right: 1px solid black;
+    padding-right: 1rem;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+
+}
+.gallery a ,.location a,  .review a{
+    
+    padding-right: 1rem;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    color: black;
+    
+}
+/* .review{
     font-size: 14px;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
     text-transform: capitalize;
     
-}
-.info{
+} */
+.info a{
     color: #008080;
+    font-size: 14px;
+    font-weight: 500;
     
 
 
@@ -333,9 +384,9 @@ h4{
     text-align: justify;
     padding: 2.5rem 5rem 2rem 5rem;
     color: #676464;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 450;
+    letter-spacing: 0.5px;
     
 }
 
@@ -396,6 +447,11 @@ tr{
     position: absolute !important;
     font-size: 0.85rem !important;
     top: 125px;
+}
+.img-img img {
+    object-fit: cover !important;
+    background-size: cover !important;
+
 }
 /* main starts here
 

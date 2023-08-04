@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 html, body{
     width:100%;
@@ -19,6 +20,7 @@ body {
     overflow-x: hidden;
     max-width: 100vw;
 }
+
 main,
 footer,section {
 	max-width: 100%;
@@ -40,6 +42,25 @@ header{
     height: 100vh;
     position: relative;
 }
+
+.imgDiv {
+    position: relative;
+    width: 50%;
+}
+
+header .imgDiv img {
+    flex-basis: 25%;
+}
+
+header .imgDiv p {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 0;
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -67,7 +88,9 @@ nav{
     font-weight: 400;
     letter-spacing: 1.5px;
 }
-
+.nav li a:hover{
+    color:  #008080;
+}
 .moon{
     position: relative;
     font-size: 12px;
@@ -115,6 +138,10 @@ nav{
     border-radius: 7px;
     background:#f4cc05;  
     padding-top: 0;      
+    
+}
+.nav span hr:hover{
+   color:  #008080;      
     
 }
 
@@ -230,10 +257,10 @@ h4{
 }
 .menu{
     position: absolute;
-    left: 150px;
+    left: 125px;
     top: 665px;
     /* width:60%; */
-    padding: 0.85rem;
+    padding:  1.5rem;
     display: flex;
     gap: 1.5rem;
     border: 1px solid grey;
@@ -253,16 +280,25 @@ h4{
     font-family: 'Inter', sans-serif;
     text-transform: capitalize;
     
-}
-.review{
-    font-size: 14px;
-    font-weight: 800;
-    font-family: 'Inter', sans-serif;
-    text-transform: capitalize;
     
 }
-.info{
+.review a ,.location a, .info a{
+    border-right: 1px solid black;
+    padding-right: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    color: black;
+    
+    
+}
+
+
+.gallery a{
     color: #008080;
+    font-size: 20px;
+    font-weight: 500;
     
 
 

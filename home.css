@@ -40,6 +40,10 @@ header .imgDiv p {
     left: 5%;
     right: 0;
 }
+/* footer logo */
+
+
+/* end */
 
 .navBar .desktop-menu {
     display: flex;
@@ -69,8 +73,12 @@ header .imgDiv p {
     border-color: transparent;
     background: transparent;
     font-size: 0.3rem;
-    color: #fff;
+    /* color: #fff; */
 }
+
+
+  
+
 
 
 .divContainer2 {
